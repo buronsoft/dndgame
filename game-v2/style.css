@@ -1,0 +1,50 @@
+#board {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#board td {
+    padding: 0;
+    margin: 0;
+}
+
+#board .player {
+    background-image: url("../assets/wall-background.jpeg");
+}
+
+#board .treasure {
+    background-image: url("../assets/wall-background.jpeg");
+}
+
+#panel {
+    padding-left: 100;
+}
+
+#settings {
+    padding-left: 50;
+}
+
+/* Add this CSS to your stylesheet or within a <style> tag in your HTML */
+
+#configForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.player-config {
+    width: 23%;
+    /* Adjust as needed */
+    margin: 10px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.avatar-info {
+    text-align: center;
+}
