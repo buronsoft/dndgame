@@ -5,7 +5,7 @@ https://buronsoft.github.io/dndgame/
 
 Once you open the link, the following window will show up:
 
-```TODO: Add image```
+![Config play view](./images/image01.png)
 
 For the current online version, every play has exactly 
 - 4 players
@@ -44,11 +44,9 @@ In the config menu, we choose the raze of all the players in the game. There are
 
 You might choose every role using the dropboxes. Once you are ready to start, click the ```Start Game``` button 
 
-```TODO: Add image```
-
 Then you'll be seeing the board with the players, the chests, the real time stats of the players and the current player
 
-```TODO: Add image```
+![Main game view](./images/image02.png)
 
 During their turn, a player can make 1 of 2 actions.
 - Using an active item *(Note: For this version there are not any active items yet.)*
