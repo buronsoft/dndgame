@@ -1,0 +1,135 @@
+<html>
+<html lang="en">
+
+<head>
+    <title>D&D Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h2 id="configFormTitle">Game Configuration</h2>
+    <form id="configForm">
+        <div class="player-config">
+            <h3>Player 1</h3>
+            <div class="avatar-info">
+                <img x="0" y="0" width="150" height="150" src="/assets/player1.svg"><br>
+                <label for="player1Class">Select Class:</label>
+                <select id="player1Class" name="player1Class">
+                    <option value="warrior">Warrior</option>
+                    <option value="mage">Mage</option>
+                    <option value="rogue">Rogue</option>
+                    <option value="paladin">Paladin</option>
+                </select>
+                <div class="class-info" id="player1Info">
+                    <p>Health Points (HP): 100</p>
+                    <p>Attack Damage (AD): 12</p>
+                    <p>Ability Power (AP): 5</p>
+                    <p>Armor: 5</p>
+                    <p>Magic Resistance: 3</p>
+                    <p>Item Slots: 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="player-config">
+            <h3>Player 2</h3>
+            <div class="avatar-info">
+                <img x="0" y="0" width="150" height="150" src="/assets/player2.svg"><br>
+                <label for="player2Class">Select Class:</label>
+                <select id="player2Class" name="player2Class">
+                    <option value="warrior">Warrior</option>
+                    <option value="mage">Mage</option>
+                    <option value="rogue">Rogue</option>
+                    <option value="paladin">Paladin</option>
+                </select>
+                <div class="class-info" id="player2Info">
+                    <p>Health Points (HP): 100</p>
+                    <p>Attack Damage (AD): 12</p>
+                    <p>Ability Power (AP): 5</p>
+                    <p>Armor: 5</p>
+                    <p>Magic Resistance: 3</p>
+                    <p>Item Slots: 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="player-config">
+            <h3>Player 3</h3>
+            <div class="avatar-info">
+                <img x="0" y="0" width="150" height="150" src="/assets/player3.svg"><br>
+                <label for="player3Class">Select Class:</label>
+                <select id="player3Class" name="player3Class">
+                    <option value="warrior">Warrior</option>
+                    <option value="mage">Mage</option>
+                    <option value="rogue">Rogue</option>
+                    <option value="paladin">Paladin</option>
+                </select>
+                <div class="class-info" id="player3Info">
+                    <p>Health Points (HP): 100</p>
+                    <p>Attack Damage (AD): 12</p>
+                    <p>Ability Power (AP): 5</p>
+                    <p>Armor: 5</p>
+                    <p>Magic Resistance: 3</p>
+                    <p>Item Slots: 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="player-config">
+            <h3>Player 4</h3>
+            <div class="avatar-info">
+                <img x="0" y="0" width="150" height="150" src="/assets/player4.svg"><br>
+                <label for="player4Class">Select Class:</label>
+                <select id="player4Class" name="player4Class">
+                    <option value="warrior">Warrior</option>
+                    <option value="mage">Mage</option>
+                    <option value="rogue">Rogue</option>
+                    <option value="paladin">Paladin</option>
+                </select>
+                <div class="class-info" id="player4Info">
+                    <p>Health Points (HP): 100</p>
+                    <p>Attack Damage (AD): 12</p>
+                    <p>Ability Power (AP): 5</p>
+                    <p>Armor: 5</p>
+                    <p>Magic Resistance: 3</p>
+                    <p>Item Slots: 3</p>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Start Game</button>
+    </form>
+
+    <table id="canvas" hidden>
+        <tr id="canvas-row">
+            <td>
+                <table id="board"></table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td id="panel">
+                            <div id="current-turn"></div><br>
+                            <div id="current-turn-image"></div>
+                        </td>
+                        <div id="dice"></div>
+                    </tr>
+                </table>
+            </td>
+            <td id="settings">
+                <table>
+                    <tr>
+                        <h2>Audio and Stats</h2>
+                        <audio src="sounds/8bit-background.mp3" controls loop></audio>
+                    </tr>
+                    <tr id="stats">
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
