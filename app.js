@@ -1098,7 +1098,7 @@ function gameLoop() {
       }
     }
     currentTurnElement.textContent = `Winner: Player ${winner + 1}`;
-    currentTurnImageElement.innerHTML = '<img class="player" x="0" y="0" width="200" height="200" src="./dndgame/assets/player' + (winner + 1) + '.svg"></td>'
+    currentTurnImageElement.innerHTML = '<img class="player" x="0" y="0" width="200" height="200" src="./assets/player' + (winner + 1) + '.svg"></td>'
 
     statsString = '<br>'
     for (let i = 0; i < players.length; i++) {
@@ -1149,22 +1149,22 @@ function updateBoard() {
     for (let j = 0; j < maze[i].length; j++) {
       if (maze[i][j] === 'c') {
         if ((i + j) % 2 === 0) {
-          html += '<td><img x="0" y="0" width="40" height="40" src="./dndgame/assets/cell.svg" alt="cell"></td>';
+          html += '<td><img x="0" y="0" width="40" height="40" src="./assets/cell.svg" alt="cell"></td>';
         } else {
-          html += '<td><img x="0" y="0" width="40" height="40" src="./dndgame/assets/cell2.svg" alt="cell"></td>';
+          html += '<td><img x="0" y="0" width="40" height="40" src="./assets/cell2.svg" alt="cell"></td>';
         }
       } else if (maze[i][j] === 'w') {
-        html += '<td><img x="0" y="0" width="40" height="40" src="./dndgame/assets/wall.svg" alt="wall"></td>';
+        html += '<td><img x="0" y="0" width="40" height="40" src="./assets/wall.svg" alt="wall"></td>';
       } else if (maze[i][j] === '1') {
-        html += '<td><img class="player" x="0" y="0" width="40" height="40" src="./dndgame/assets/player1.svg" alt="player1"></td>';
+        html += '<td><img class="player" x="0" y="0" width="40" height="40" src="./assets/player1.svg" alt="player1"></td>';
       } else if (maze[i][j] === '2') {
-        html += '<td><img class="player" x="0" y="0" width="40" height="40" src="./dndgame/assets/player2.svg" alt="player2"></td>';
+        html += '<td><img class="player" x="0" y="0" width="40" height="40" src="./assets/player2.svg" alt="player2"></td>';
       } else if (maze[i][j] === '3') {
-        html += '<td><img class="player" x="0" y="0" width="40" height="40" src="./dndgame/assets/player3.svg" alt="player3"></td>';
+        html += '<td><img class="player" x="0" y="0" width="40" height="40" src="./assets/player3.svg" alt="player3"></td>';
       } else if (maze[i][j] === '4') {
-        html += '<td><img class="player" x="0" y="0" width="40" height="40" src="./dndgame/assets/player4.svg" alt="player4"></td>';
+        html += '<td><img class="player" x="0" y="0" width="40" height="40" src="./assets/player4.svg" alt="player4"></td>';
       } else if (maze[i][j].includes('t')) {
-        html += '<td><img class="treasure" x="0" y="0" width="40" height="40" src="./dndgame/assets/treasure2.svg" alt="treasure"></td>';
+        html += '<td><img class="treasure" x="0" y="0" width="40" height="40" src="./assets/treasure2.svg" alt="treasure"></td>';
       } else {
         html += '<td>&nbsp;</td>';
       }
@@ -1173,7 +1173,7 @@ function updateBoard() {
   }
   board.innerHTML = html;
   currentTurnElement.textContent = `Current Turn: Player ${currentPlayer + 1} (${players[currentPlayer].state})`;
-  currentTurnImageElement.innerHTML = '<img class="player" x="0" y="0" width="200" height="200" src="./dndgame/assets/player' + (currentPlayer + 1) + '.svg"></td>'
+  currentTurnImageElement.innerHTML = '<img class="player" x="0" y="0" width="200" height="200" src="./assets/player' + (currentPlayer + 1) + '.svg"></td>'
 
   statsString = '<br>'
   for (let i = 0; i < players.length; i++) {
