@@ -9,11 +9,11 @@
 }
 
 #board .player {
-    background-image: url("../assets/wall-background.jpeg");
+    background-image: url("./assets/wall-background.jpeg");
 }
 
 #board .treasure {
-    background-image: url("../assets/wall-background.jpeg");
+    background-image: url("./assets/wall-background.jpeg");
 }
 
 #panel {
